@@ -2,13 +2,16 @@ import pygame as pg
 from  random import  randint
 from copy import  deepcopy
 from numba import jit
+#####################
 
 RES = WIDTH, HEIGHT = 900, 900
 TILE = 10
 W, H = WIDTH // TILE, HEIGHT // TILE 
 FPS = 30
 
+#########
 pg.init()
+#########
 
 surface = pg.display.set_mode(RES)
 clock = pg.time.Clock()
@@ -16,6 +19,7 @@ clock = pg.time.Clock()
 next_field = [[0 for x in range(W)] for j in range(H)]
 current_field = [[randint(0, 1) for i in range(W)] for j in range(H)]
 
+###################
 @jit(parallel=True)
 def check_cell(current_field, x, y):
     count = 0
