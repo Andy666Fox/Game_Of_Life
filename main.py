@@ -46,10 +46,10 @@ def check_cell(current_field, x, y):
 
 while True:
     
-    surface.fill(pg.Color('black'))
-    for event in pg.event.get():
-        if event.type == pg.QUIT:
-            exit()
+    surface.fill(pg.Color('black'))  # \
+    for event in pg.event.get():     # Check for exit
+        if event.type == pg.QUIT:    #
+            exit()                   # /
             
     [pg.draw.line(surface, pg.Color('dimgray'), (x, 0), (x, HEIGHT)) for x in range(0, WIDTH, TILE)]
     [pg.draw.line(surface, pg.Color('dimgray'), (0, y), (WIDTH, y)) for y in range(0, HEIGHT, TILE)]
