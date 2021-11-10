@@ -9,9 +9,11 @@ TILE = 10
 W, H = WIDTH // TILE, HEIGHT // TILE 
 FPS = 30
 
+
 #########
 pg.init()
 #########
+
 
 surface = pg.display.set_mode(RES)
 clock = pg.time.Clock()
