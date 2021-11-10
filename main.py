@@ -17,7 +17,6 @@ FPS = 30
 pg.init()
 #########
 
-
 surface = pg.display.set_mode(RES)
 clock = pg.time.Clock()
 
@@ -42,6 +41,8 @@ def check_cell(current_field, x, y):
         if count == 3:
             return 1
         return 0 
+
+###################################
 
 while True:
     
