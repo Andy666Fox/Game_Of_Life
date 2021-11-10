@@ -1,15 +1,18 @@
+# IMPORTS
+
 import pygame as pg 
 from  random import  randint
 from copy import  deepcopy
 from numba import jit
 #####################
 
-RES = WIDTH, HEIGHT = 900, 900
+RES = WIDTH, HEIGHT = 1000, 1000
 TILE = 10
 W, H = WIDTH // TILE, HEIGHT // TILE 
 FPS = 30
 
 
+# MAIN WINDOW INIT
 #########
 pg.init()
 #########
